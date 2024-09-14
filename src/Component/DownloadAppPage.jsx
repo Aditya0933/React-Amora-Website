@@ -5,46 +5,12 @@ import { Link } from "react-router-dom";
 // import '../App.css';
 import '../Font.css';
 
-const Home = () => {
+const DownloadAppPage = () => {
   return (
     <div className="px-[4%] max-w-[1200px] mx-auto">
-      {/* Home 1st Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="sm:p-[5%] pl-0 mx-auto">
-          <h1 className="text-[25px] sm:text-4xl font-bold leading-normal text-white">
-            Saúde mental que atende as pessoas onde elas estão!
-          </h1>
-          <h3 className="text-2xl text-customGreen pt-6 sm:pt-12 font-bold text-green-5">Terapia por IA</h3>
-          <h4 className="text-xl pt-6 font-medium text-white">
-            Completamente anônimo.
-          </h4>
-          <h4 className="text-xl font-medium text-white">
-            Sem estigma. Sem limites.
-          </h4>
-          <p className="text-[14px] sm:text-[15px] py-4 sm:py-6 text-white">
-            A maioria das pessoas se sente melhor após a primeira conversa e
-            conta com a Amora
-          </p>
-          <Link to="/appstore">
-          <button
-            type="button"
-            class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-100 bg-buttonBackColor rounded-full hover:bg-blue-700 hover:text-blue-100 border-none"
-          >
-            Clique para Baixar
-          </button>
-          </Link>
-        </div>
-        <div className="relative">
-          <img
-            className="h-[380px] sm:h-[450px] mr-auto ml-auto lg:absolute lg:right-0"
-            src={HomeBanner1}
-            alt="home banner"
-          />
-        </div>
-      </div>
 
-      {/* Home Second Section */}
-      {/* <div className="grid grid-cols-1 lg:grid-cols-2 ">
+      {/* Download App Page Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 ">
         <div className="sm:p-[5%] pl-0 mt-[25px] mx-auto">
           <div className="">
             <h1 className="text-[25px] sm:text-4xl font-bold leading-normal text-white">
@@ -62,7 +28,7 @@ const Home = () => {
               <img className="h-8 w-8" src={SVG}></img>
               <p className="pl-2 text-left text-[13px] font-semibold">
                 GET IT ON<br></br>
-                <span className="font-semibold text-[25px] mt-2">Google Play</span>
+                <span className="font-semibold text-[22px] mt-2">Google Play</span>
               </p>
             </button>
             <button
@@ -86,28 +52,29 @@ const Home = () => {
               </svg>
               <p className="text-left text-[13px] font-semibold">
                 Downoload on the <br></br>
-                <span className="font-semibold text-[25px]">Apple Store</span>
+                <span className="font-semibold text-[22px]">Apple Store</span>
               </p>
             </button>
           </div>
           <div className="mt-10">
+            <Link to="/">
             <button
               type="button"
               class="mt-4 sm:mt-10 py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white bg-buttonBackColor focus:outline-none border-gray-200"
             >
               Clique para Baixar
-            </button>
+            </button></Link>
           </div>
         </div>
         <div className="flex justify-center items-center h-full w-full overflow-hidden">
-          <img className="h-[380px] sm:h-[500px]"
+          <img className="h-[340px] sm:h-[450px]"
             src={HomeBanner1}
             alt="home banner"
           />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
 
-export default Home;
+export default DownloadAppPage;

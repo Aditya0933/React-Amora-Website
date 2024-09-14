@@ -8,8 +8,10 @@ module.exports = {
       colors:{
         customBlue: '#0066FE',
         buttonBackColor: '#0240DA',
+        customGreen: '#9DD51B',
       },height: {
         'custom-h': 'calc(100vh - 44px)',
+        'customDash-h': 'calc(100vh - 70px)',
       },
       boxShadow: {
         

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('./fonts/Gotham-Regular.woff2') format('woff2'),
+         url('./fonts/Gotham-Regular.woff') format('woff'),
+         url('./fonts/Gotham-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('./fonts/Gotham-Bold.woff2') format('woff2'),
+         url('./fonts/Gotham-Bold.woff') format('woff'),
+         url('./fonts/Gotham-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* Gotham Font */
+body {
+    font-family: 'Gotham', sans-serif;
+}
+
+h1 {
+    font-family: 'Gotham', sans-serif;
+}
+
+p {
+    font-family: 'Gotham', sans-serif;
+}
+
+
+/*Scrollbar*/
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    width: 80px !important;
+    padding-top: 20px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+    width: 100px !important;
+    background-clip: content-box;
+    border: 2px solid transparent;
+}

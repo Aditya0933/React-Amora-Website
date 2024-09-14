@@ -1,0 +1,128 @@
+/* Add this CSS to your styles */
+
+/* Sidebar transitions */
+.sidebar {
+  transition: transform 0.4s ease;
+  transform: translateX(0);
+}
+
+.sidebar-responsive {
+  transform: translateX(-235px); /* Adjust the value as needed */
+}
+
+/* Grid template columns for different states */
+.grid-template-columns-235px-1fr {
+  grid-template-columns: 235px 1fr;
+}
+
+.grid-template-columns-1fr {
+  grid-template-columns: 1fr;
+}
+
+/* Sidebar responsive state */
+.sidebar-hidden {
+  width: 0;
+  overflow: hidden;
+}
+
+/* Header logo size */
+.header-logo-expanded {
+  height: 70px;
+  width: 155px;
+}
+
+.header-logo-collapsed {
+  display: none;
+  height: 35px;
+  width: 77px;
+}
+
+/* Header grid template columns for different states */
+.header-expanded {
+  grid-template-columns: 235px 1fr;
+}
+
+.header-collapsed {
+  grid-template-columns: 70px 1fr;
+}
+
+/* Add this CSS to your styles */
+
+/* Sidebar transitions */
+.sidebar {
+  transition: transform 0.4s ease;
+  transform: translateX(0);
+}
+
+.sidebar-responsive {
+  transform: translateX(-100%); /* Slide the sidebar completely out of view */
+}
+
+/* Grid template columns for different states */
+.grid-template-columns-sidebar-1fr {
+  grid-template-columns: var(--sidebar-width) 1fr;
+}
+
+.grid-template-columns-1fr {
+  grid-template-columns: 1fr;
+}
+
+/* Responsive sidebar width */
+.sidebar-width {
+  --sidebar-width: 160px;
+}
+
+@media (min-width: 768px) {
+  .sidebar-width {
+      --sidebar-width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar-width {
+      --sidebar-width: 235px;
+  }
+}
+
+/* Sidebar hidden state */
+.sidebar-hidden {
+  width: 0;
+  overflow: hidden;
+}
+
+/* Header logo size */
+.header-logo-expanded {
+  height: 70px;
+  width: 155px;
+}
+
+.header-logo-collapsed {
+  height: 35px;
+  width: 77px;
+}
+
+/* Header grid template columns for different states */
+.header-expanded {
+  grid-template-columns: var(--sidebar-width) 1fr;
+}
+
+.header-collapsed {
+  grid-template-columns: 70px 1fr;
+}
+
+.headerRes{
+  grid-template-columns: 235px 1fr;
+}
+
+@media (max-width: 600px) {
+  .headerRes{
+    grid-template-columns: 200px 1fr;
+  }
+}
+@media (max-width: 425px) {
+  .headerRes{
+    grid-template-columns: 0px 1fr;
+  }
+}
+
+
